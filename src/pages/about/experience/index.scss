@@ -1,0 +1,45 @@
+.experience-title {
+  h1 {
+    color: white;
+  }
+  h1::after {
+    border: 2px solid #fff;
+  }
+}
+.experience-section {
+  padding-top: 5%;
+  padding-bottom: 5%
+}
+.experience-item {
+  border: 1px solid #89bbd3;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background 1s;
+  margin-bottom: 2%;
+  div {
+    h2 {
+      color: white;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    i {
+      color: #95c5db;
+      cursor: pointer;
+      font-size: 1vw;
+    }
+    i:hover {
+      opacity: 0.5;
+    }
+  }
+  .time {
+    color: #aac7d9;
+    font-size: 0.6vw;
+  }
+  .position {
+    color: #95c5db;
+    font-size: 0.7vw;
+  }
+}
+.experience-item:hover {
+  background: rgba(255,255,255,0.1);
+}

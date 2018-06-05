@@ -1,0 +1,20 @@
+.section-right {
+  h2 {
+    font-size: 1.5vw;
+  }
+  p {
+    font-size: 1vw;
+  }
+}
+.no-color-title {
+  h1 {
+    color: #3295be;
+  }
+  i {
+    color: #3295be;
+    opacity: 0.5;
+  }
+  h1::after {
+    border: 2px solid #3295be;
+  }
+}
