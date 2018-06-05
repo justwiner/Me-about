@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+import {About} from '../pages'
 
 class App extends Component {
   render () {
     return (
-      <div>My App</div>
+      <About />
     )
   }
 }
