@@ -34,13 +34,13 @@ class Education extends Component {
     const { educations } = this.state
     return (
       <section className="education-section color-section section">
-        <div className="section-left">
+        <div className="section-left animation-section">
           <div className="title experience-title">
             <h1>Education</h1>
             <Icon type="schedule" />
           </div>
         </div>
-        <div className="section-right">
+        <div className="section-right animation-section">
           {
             educations.map((item, index) => {
               return (

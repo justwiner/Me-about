@@ -54,13 +54,13 @@ class Experience extends Component {
     const { experiences } = this.state
     return (
       <section className="experience-section color-section section">
-        <div className="section-left">
+        <div className="section-left animation-section">
           <div className="title experience-title">
             <h1>Experience</h1>
             <Icon type="file-text" />
           </div>
         </div>
-        <div className="section-right">
+        <div className="section-right animation-section">
           {
             experiences.map((item, index) => {
               return (

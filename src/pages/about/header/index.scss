@@ -14,6 +14,9 @@
   }
   .header-about {
     padding: 10% 0 13% 0;
+    animation-name: downToUp;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
     h1 {
       color: white;
       font-size: 3vw;

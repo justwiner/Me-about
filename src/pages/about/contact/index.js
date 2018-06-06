@@ -6,13 +6,13 @@ class Contact extends Component {
   render () {
     return (
       <section className="section line-section">
-        <div className="section-left">
+        <div className="section-left animation-section">
           <div className="title no-color-title">
             <h1>Cpntact</h1>
             <Icon type="message" />
           </div>
         </div>
-        <div className="section-right">
+        <div className="section-right animation-section">
           <h2 className="myEmail">392110917@qq.com</h2>
           <div className="other-info">
             <label>友情链接：</label>

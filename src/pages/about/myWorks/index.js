@@ -47,13 +47,13 @@ class MyWorks extends Component {
     const { works } = this.state
     return (
       <section className="section">
-        <div className="section-left">
+        <div className="section-left animation-section">
           <div className="title no-color-title">
             <h1>Works</h1>
             <Icon type="schedule" />
           </div>
         </div>
-        <div className="section-right">
+        <div className="section-right animation-section">
           {
             works.map((item, index) => {
               return (

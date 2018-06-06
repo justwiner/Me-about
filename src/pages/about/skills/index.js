@@ -49,14 +49,13 @@ class Skills extends Component {
     const { skills } = this.state
     return (
       <section className="section">
-        <div className="section-left">
+        <div className="section-left animation-section">
           <div className="title no-color-title">
             <h1>Skills</h1>
             <Icon type="user" />
           </div>
         </div>
-        <div className="section-right skills-items">
-          
+        <div className="section-right skills-items animation-section">
           {
             skills.map((item, index) => {
               return (

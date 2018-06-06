@@ -38,3 +38,19 @@ $section_right: 80%;
     display: inline-block;
   }
 }
+.animation-section {
+  animation-name: downToUp;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+
+@keyframes downToUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
