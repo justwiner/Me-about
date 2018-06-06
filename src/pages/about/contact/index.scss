@@ -1,0 +1,31 @@
+.line-section {
+  border-top: 1px solid #eee;
+  .myEmail {
+    color: #58798c;
+    font-weight: bold;
+  }
+  .other-info {
+    display: flex;
+    align-items: center;
+    label {
+      margin-right: 2%;
+      font-size: 0.8vw;
+    }
+    a {
+      margin: 0 1%;
+      i {
+        font-size: 2.5vw;
+      }
+    }
+    a:nth-child(2) {
+      i {
+        color: #3295be;
+      }
+    }
+    a:nth-child(3) {
+      i {
+        color: #40b4e4;
+      }
+    }
+  }
+}

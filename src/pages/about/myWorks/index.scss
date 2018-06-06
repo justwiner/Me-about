@@ -11,6 +11,10 @@
     border: 1px solid #eee;
     border-radius: 10px;
     margin-bottom: 10px;
+    transition: box-shadow 300ms
+  }
+  .works-item-img img:hover {
+    box-shadow: 3px 3px 40px lightgrey;
   }
   .works-item-title {
     h2 {

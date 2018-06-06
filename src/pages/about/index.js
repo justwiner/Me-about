@@ -5,6 +5,8 @@ import Experience from './experience'
 import Skills from './skills'
 import Education from './education'
 import MyWorks from './myWorks'
+import Contact from './contact'
+import Footer from './foot'
 import './index.scss'
 
 class About extends Component {
@@ -17,6 +19,8 @@ class About extends Component {
         <Skills />
         <Education />
         <MyWorks />
+        <Contact />
+        <Footer />
       </content>
     )
   }

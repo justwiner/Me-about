@@ -1,0 +1,21 @@
+.footer-section {
+  margin: 0.8vw 3vw;
+  display: flex;
+  align-items: center;
+  .footer-title {
+    width: 10%;
+    color: #aaa;
+    font {
+      margin: 0 0.5%;
+    }
+  }
+  .footer-copyright {
+    width: 90%;
+    i {
+      margin-left: 35%
+    }
+    font {
+      padding: 0 0.3% 0 0;
+    }
+  }
+}
