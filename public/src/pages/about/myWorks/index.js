@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Icon} from 'antd'
+import { Server } from '../../../lib'
 import './index.scss'
 
 class MyWorks extends Component {
@@ -9,38 +10,10 @@ class MyWorks extends Component {
       works: []
     }
   }
-  componentDidMount () {
+  async componentDidMount () {
+    const result = await Server.getWorks()
     this.setState({
-      works: [
-        {
-          id: 1,
-          img: 'http://jessdesigntan.com/images/styletribute.jpg',
-          link: 'https://www.baidu.com',
-          title: 'Styletrbute.com-1',
-          tags: ['html', 'js', 'css']
-        },
-        {
-          id: 2,
-          img: 'http://jessdesigntan.com/images/dearcarrie.jpg',
-          link: 'https://www.baidu.com',
-          title: 'Styletrbute.com-2',
-          tags: ['html', 'js', 'css']
-        },
-        {
-          id: 3,
-          img: 'http://jessdesigntan.com/images/nickel.jpg',
-          link: 'https://www.baidu.com',
-          title: 'Styletrbute.com-3',
-          tags: ['html', 'js']
-        },
-        {
-          id: 4,
-          img: 'http://jessdesigntan.com/images/sqrl.jpg',
-          link: 'https://www.baidu.com',
-          title: 'Styletrbute.com-4',
-          tags: ['html', 'js', 'css', 'react']
-        }
-      ]
+      works: result.data
     })
   }
   render() {

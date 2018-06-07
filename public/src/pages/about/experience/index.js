@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Icon } from 'antd'
+import { Server } from '../../../lib'
 import './index.scss'
 
 class Experience extends Component {
@@ -9,42 +10,10 @@ class Experience extends Component {
       experiences: []
     }
   }
-  componentDidMount () {
+  async componentDidMount () {
+    const result = await Server.getExperiences()
     this.setState({
-      experiences: [
-        {
-          id: 1,
-          name: '学生活App',
-          startTime: '2016-7-1',
-          endTime: '2016-8-1',
-          position: '前端开发工程师',
-          link: 'https://www.baidu.com'
-        },
-        {
-          id: 2,
-          name: '学生活App 2',
-          startTime: '2016-7-1',
-          endTime: '2016-8-1',
-          position: '前端开发工程师',
-          link: 'https://www.baidu.com'
-        },
-        {
-          id: 3,
-          name: '学生活App 3',
-          startTime: '2016-7-1',
-          endTime: '2016-8-1',
-          position: '前端开发工程师',
-          link: 'https://www.baidu.com'
-        },
-        {
-          id: 4,
-          name: '学生活App 4',
-          startTime: '2016-7-1',
-          endTime: '2016-8-1',
-          position: '前端开发工程师',
-          link: 'https://www.baidu.com'
-        }
-      ]
+      experiences: result.data
     })
   }
   toMyExperience = link => {
